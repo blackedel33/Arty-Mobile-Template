@@ -1,0 +1,544 @@
+/*
+===============================================
+[Main stylesheet my-app.css]
+
+Author:	        Guillaume Mickael
+Version:	    1.0
+Created:	    03.12.2015
+Last updated:	06.01.2016
+Template:	    Arty - HTML Mobile Template
+
+[Table of Contents]
+
+
+1. GENERAL
+2. ARTICLE
+3. PROFILE
+4. FRIENDS
+5. CHAT
+6. CALENDAR
+7. SHOP
+
+=================================================
+*/
+/*
+===============================================
+GENERAL
+=================================================
+*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  color: #777;
+}
+
+p.left {
+  text-align: left;
+}
+
+p.right {
+  text-align: right;
+}
+
+p.center {
+  text-align: center;
+}
+
+statusbar-overlay {
+  background-color: white;
+}
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #212121;
+  background: white;
+}
+
+.statusbar-overlay {
+  background: white;
+}
+
+.page-content {
+  padding-top: 0px;
+  background: white;
+}
+
+.content-block,
+.list-block .item-text {
+  color: #777;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-block {
+  margin: 0;
+}
+
+.list-block.media-list .item-link .item-title-row {
+  padding-right: 0px;
+  background-image: none;
+}
+
+.content-block {
+  margin: 20px 0;
+}
+
+.content-block-title {
+  margin: 20px 15px 10px;
+}
+
+.item-title {
+  font-size: 15px;
+}
+
+.item-after {
+  font-size: 15px;
+}
+
+.item-subtitle {
+  color: #5A92EC;
+}
+
+.list-block .item-text {
+  font-size: 15px;
+  display: block;
+  margin-top: 10px;
+}
+
+.list-block li.feed {
+  margin-top: -5px;
+  padding: 10px 0;
+}
+
+.item-inner.feed:after {
+  display: none;
+}
+
+textarea,
+input {
+  font-size: 15px !important;
+}
+
+.button.button-fill {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: #5A92EC;
+}
+
+.actions-modal-group {
+  margin: 0;
+  border-radius: 0;
+}
+
+.actions-modal-button {
+  font-size: 15px;
+  color: #676767;
+}
+
+.actions-modal-button:last-child,
+.actions-modal-label:last-child,
+.actions-modal-button:first-child,
+.actions-modal-label:first-child {
+  border-radius: 0;
+}
+
+.color-red {
+  color: #ff3b30 !important;
+}
+
+.pages {
+  height: 101%;
+}
+
+div[class*="col-"] {
+  text-align: center;
+}
+
+.col-50.features,
+.col-33.features {
+  text-align: start;
+}
+
+.card {
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+  border: 1px solid #e4e4e4;
+}
+
+.demo-card-header-pic .card-header {
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-header {
+  border-radius: 0;
+}
+
+.content-block-title {
+  font-weight: 700;
+  color: #777;
+  padding: 5px 0;
+}
+
+.list-block .swipeout-actions-right a.swipeout-delete {
+  background: #EE6352;
+}
+
+.list-block .swipeout-actions-right a.swipeout-reply {
+  background: #5A92EC;
+}
+
+li {
+  list-style: none;
+}
+
+.list-block.media-list .item-title {
+  color: #676767;
+  font-weight: 700;
+}
+
+#map-canvas {
+  height: 260px;
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.fa.services {
+  color: #676767;
+  padding: 0 15px 0 0;
+}
+
+span.lnr.lnr-exit-up {
+  color: #676767;
+}
+
+.lnr {
+  /* Icons */
+  color: #212121;
+  font-size: 20px;
+  /* To get crisp results, use sizes that are
+a multiple of 20; because Linearicons was
+designed on a 20 by 20 grid. */
+}
+
+.fa {
+  color: white;
+}
+
+/*
+===============================================
+ARTICLE
+=================================================
+*/
+.item-after {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.item-after-author {
+  color: #5A92EC;
+}
+
+img.responsive.header {
+  margin-top: 44px;
+}
+
+.article-title {
+  font-size: 18px;
+  color: #676767;
+  font-weight: 700;
+}
+
+p.article-text {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+img.avatar {
+  border-radius: 100%;
+}
+
+
+/*
+===============================================
+PROFILE
+=================================================
+*/
+
+.content-block.profile {
+  padding: 0;
+}
+
+/* Album */
+.lnr.lnr-arrow-left.album,
+.lnr.lnr-chevron-right,
+.lnr.lnr-chevron-left {
+  color: white;
+}
+
+.swiper-slide span {
+  margin: 0;
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+  display: block;
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #676767;
+}
+
+/*
+===============================================
+FRIENDS
+=================================================
+*/
+.row.name {
+  padding: 0 0 20px;
+}
+
+/*
+===============================================
+GROUPS
+=================================================
+*/
+.groups-info {
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+}
+
+p.groups-title {
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 15px;
+  margin-top: -60px;
+}
+
+p.groups-posts {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  padding: 0 15px;
+  margin-top: -15px;
+}
+
+/*
+===============================================
+CHAT
+=================================================
+*/
+.message-sent,
+.message-text {
+  font-size: 15px !important;
+  padding: 7px 16px 9px !important;
+}
+
+.messages-date {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.message-label {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.toolbar.messagebar {
+  background: white;
+  border-top: solid 1px #E2E2E2;
+}
+
+.toolbar:before {
+  display: none;
+}
+
+a.link.chat {
+  color: #676767;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.messagebar textarea {
+  border: none;
+}
+
+/*
+===============================================
+CALENDAR
+=================================================
+*/
+.content-block.calendar {
+  margin: 0;
+}
+
+.picker-modal .toolbar {
+  background: #5A92EC;
+}
+
+.center.calendar {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fa.fa.calendar.fa-angle-right,
+.fa.fa.calendar.fa-angle-left {
+  color: white;
+  font-size: 20px;
+}
+
+.picker-calendar-day.picker-calendar-day-selected span {
+  background: #EE6352;
+}
+
+.content-block-inner:before {
+  display: none;
+}
+
+/*
+===============================================
+SHOP
+=================================================
+*/
+.article-title.item {
+  float: left;
+}
+
+p.right.addcart {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #5A92EC;
+}
+
+a.shop {
+  font-weight: 400;
+  color: #777;
+  float: right;
+}
+
+p.shop-title {
+  color: #777;
+}
+
+p.shop-price,
+.item-after.shop-price {
+  font-weight: 700;
+  color: #EE6352;
+}
+
+.fa.review.fa-star {
+  color: #F5D94B;
+}
+
+.fa.star.fa-star-o {
+  color: #676767;
+}
+
+.button.button-fill.total {
+  background-color: #5AC553;
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+}
+
+.button.button-fill.order-now {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.button.button-fill.total-checkout {
+  background-color: #5AC553;
+}
